@@ -1,0 +1,84 @@
+body {
+  font-family: p22-underground, Gills Sans, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header > a {
+  display: flex;
+  width: 96vw;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+  box-shadow: 0 3px 9px #00000069;
+}
+header {
+  box-shadow: 0 9px 32px #00000069;
+}
+img {
+  width: 16%;
+  height: 16%;
+}
+div#title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+h1 {
+  font-size: medium;
+  margin: 0.5% 0;
+}
+h2 {
+  font-size: small;
+  margin: 0.5% 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding:4vw 2vw;
+}
+nav a {
+  text-transform: uppercase;
+  font-size: smaller;
+}
+nav a.current {
+  font-weight: bolder;
+  color: thistle;
+}
+footer {
+  width: 96vw;
+  position: fixed;
+  bottom: 2vw;
+  padding: 2vw;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer h4{
+    width: 100%;
+    margin: 0 2vw;
+    margin-top: 3vw;
+    font-size: small;
+}
+footer i {
+  font-size: 32px;
+  padding: 0 2vw;
+}
+footer span {
+  display: none;
+}
+footer a{
+    margin-right: 4vw;
+}
+footer > a:last-of-type {
+  background: thistle;
+  border-radius: 200px;
+  font-size: 40px;
+  position: absolute;
+  padding: 8vw;
+  right: 2vw;
+  bottom: 4vw;
+  box-shadow:0 0 16px #0000008a;
+}
