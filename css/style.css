@@ -11,14 +11,15 @@ header > a {
   justify-content: space-around;
   align-items: center;
   padding: 2vw;
+  padding-top:3vw;
   box-shadow: 0 3px 9px #00000069;
 }
 header {
-  box-shadow: 0 9px 32px #00000069;
+  box-shadow: 0 3px 9px #00000069;
 }
 img {
-  width: 16%;
-  height: 16%;
+  width: 15%;
+  height: 15%;
 }
 div#title {
   display: flex;
@@ -81,4 +82,8 @@ footer > a:last-of-type {
   right: 2vw;
   bottom: 4vw;
   box-shadow:0 0 16px #0000008a;
+}
+main{
+    background: thistle;
+    margin: 4vh 2vw;
 }
