@@ -190,3 +190,56 @@ section button:first-of-type{
     opacity: 1;
   }
 }
+@media (min-width:700px){
+  header>a {
+    padding: 2vw;
+    box-shadow: var(--shadow);
+  }
+  footer>a:last-of-type{
+    padding: 3vw;
+  }
+  section{
+    width: 48%;
+  }
+  main{
+    justify-content: space-between;
+  }
+  
+}
+@media (min-width:1000px){
+  header{
+    width: 100vw;
+  }
+  header>a{
+    width: 100%;
+    padding: 0.5vw;
+    padding-top: 1vw;
+  }
+  header>a>img{
+    margin-right: 1vw;;
+  }
+  section{
+    width: 30%;
+  }
+  main{
+    margin-top: 10vw;
+  }
+  footer{
+    width: 100%;
+    padding: 0.5vw;
+  }
+  footer> a{
+    padding: 0;
+    margin: 0;
+  }
+  footer>a:last-of-type{
+    padding: 1vw;
+    position: absolute;
+    right: 2vw;
+    bottom: 2vh;
+  }
+  footer>a>span{
+    display: inline;
+    color: black;
+  }
+}
