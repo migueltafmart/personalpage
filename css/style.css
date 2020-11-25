@@ -82,7 +82,7 @@ nav a.current {
 
 footer {
   width: 96vw;
-  /* position: fixed; */
+  position: relative;
   bottom: 0;
   padding: 2vw;
   display: flex;
@@ -114,15 +114,24 @@ footer a {
 
 footer>a:last-of-type {
   background: var(--MainColor);
+  width: 5vw;
+  height: 5vw;
   border-radius: 100px;
   font-size: 40px;
   position: fixed;
-  padding: 8vw;
   right: 2vw;
   bottom: 2vh;
   box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vw;
 }
-
+footer>a:last-of-type>img{
+  width: 60px;
+  height: 45px;
+  
+}
 footer h4 {
   display: none;
 }
