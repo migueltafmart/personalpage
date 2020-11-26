@@ -6,5 +6,3 @@ About
 Contact
 
 Porfolio
-
-Contact
