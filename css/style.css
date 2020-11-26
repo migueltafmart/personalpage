@@ -1,5 +1,6 @@
 :root {
   --MainColor: #e20070;
+  --mainColorActive: #9c024f;
   --shadow: 0 0 9px #00000069;
   --bgColor: #fff;
 }
@@ -142,6 +143,8 @@ footer span {
 
 footer>a {
   margin-right: 3vw;
+  display: flex;
+  align-items: center;
 }
 
 footer>a:last-of-type {
@@ -159,7 +162,9 @@ footer>a:last-of-type {
   justify-content: center;
   padding: 8vw;
 }
-
+footer>a:last-of-type:active{
+  background: var(--mainColorActive);
+}
 footer>a:last-of-type>img {
   width: 60px;
   height: 45px;
@@ -231,6 +236,29 @@ footer a:nth-child(3) {
     margin-right: 1vw;
     ;
   }
+  nav{
+    padding: 1vh;
+  }
+  nav a{
+    padding: 1vh 1vw;
+    background: linear-gradient(to right, white 50%, var(--MainColor) 50%) ;
+    background-size: 200%;
+    background-position: 0, 0;
+    mix-blend-mode: multiply;
+    border-radius: 100px;
+    transition:0.25s;
+  }
+  nav a:hover:not(.current){
+    background-position: -100%, 0;
+    box-shadow: var(--shadow);
+    color: white;
+  }
+  nav a:active:not(.current){
+    font-weight: bold;
+    color: white;
+    box-shadow: var(--shadow);
+    background: var(--mainColorActive);
+  }
 
   section {
     width: 30%;
@@ -252,15 +280,14 @@ footer a:nth-child(3) {
 
   footer>a:last-of-type {
     padding: 1vw;
-    position: absolute;
     right: 3vw;
-    bottom: 5vh;
+    bottom: -9.5vh;
     transition: 0.25s;
     animation: jumpUp 1s cubic-bezier(.95,.01,.7,1);
   }
 
   footer>a:last-of-type:hover {
-    bottom: 18vh;
+    bottom: 1vh;
   }
 
   footer>a>span {
@@ -270,13 +297,13 @@ footer a:nth-child(3) {
 
   @keyframes jumpUp {
     0% {
-      bottom: 5vh;
+      bottom: -9.5vhvh;
     }
     50%{
-      bottom: 25vh;
+      bottom: 10vh;
     }
     100%{
-      bottom:5vh;
+      bottom:-9.5vh;
     }
   }
 }
