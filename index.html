@@ -14,81 +14,88 @@
 
 <body>
   <header>
-    <a href="./index.html">
-      <img src="./media/favicon.png" alt="Icono" />
-      <div id="title">
-        <h1>Miguel Tafur</h1>
-        <h2>Diseñador y desarrollador web fullStack</h2>
-      </div>
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a class="current" href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./about.html">About</a>
-        </li>
-        <li>
-          <a href="./cv.html">Porfolio</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <a href="./index.html">
+        <img src="./media/favicon.png" alt="Icono" />
+        <div id="title">
+          <h1>Miguel Tafur</h1>
+          <h2>Designer & fullStack web developer</h2>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a class="current" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./cv.html">Porfolio</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <section>
-      <h2>What I'm about</h2>
-      <a href="./about.html">
-        <img src="./media/about.png" alt="" />
-      </a>
-
-      <p>
-        Hi there! my name is Miguel Tafur, and i'm a BA in Design graduate,
-        currently enrolled in a fullStack web development Bootcamp, in order
-        to learn how to better design a digital product. Other than that, I
-        also really enjoy motion graphics, illustration, and brand desgin.
-      </p>
-      <button onClick="window.open('./media/CVmigueltafur.pdf')">
-        <i class="fa fa-external-link-square" aria-hidden="true"></i>
-        Descargar CV
-      </button>
-    </section>
-    <section>
-      <h2>What am I up to?</h2>
-      <a href="./cv.html">
-        <img src="./media/porfolio.png" alt="" />
-      </a>
-      <p>
-        Although I'm currently studying, I also spend time learning on my own,
-        and creating more personal projects, like typography, posters and photogrpahy. Want to check them out?
-      </p>
-      <!-- <button conClick="window.open('./media/CVmigueltafur.pdf')">
+    <div class="wrapper">
+      <!-- Sección 1 -->
+      <section>
+        <h2>What I'm about</h2>
+        <a href="./about.html">
+          <img src="./media/about.png" alt="" />
+        </a>
+        <p>
+          Hi there! my name is Miguel Tafur, and I'm a BA in Design graduate,
+          currently enrolled in a fullStack web development Bootcamp, in order
+          to learn how to better design a digital product. Other than that, I
+          also really enjoy motion graphics, illustration, and brand desgin.
+        </p>
+        <button onClick="window.open('./media/CVmigueltafur.pdf')">
+          <i class="fa fa-external-link-square" aria-hidden="true"></i>
+          Descargar CV
+        </button>
+      </section>
+      <!-- Sección 2 -->
+      <section>
+        <h2>What am I up to?</h2>
+        <a href="./cv.html">
+          <img src="./media/porfolio.png" alt="" />
+        </a>
+        <p>
+          Although I'm currently studying, I also spend time learning on my own,
+          and creating more personal projects, like typography, posters and photogrpahy. Want to check them out?
+        </p>
+        <!-- <button conClick="window.open('./media/CVmigueltafur.pdf')">
           <i class="fa fa-external-link-square" aria-hidden="true"></i>
           Descargar CV
         </button> -->
-    </section>
-    <section>
-      <h2>Wanna work together?</h2>
-      <a href="./contact.html">
-        <img src="./media/contact.png" alt="" />
-      </a>
-      <p>
-        I'm always open to new and exciting projects. You get a wonderful
-        product, that in turn makes your costumers even happier, and I get new
-        projects to add to my porfolio. I believe these are called win-win-win
-        situations. Right?
-      </p>
-      <!-- <button onClick="window.open('./media/CVmigueltafur.pdf')">
+      </section>
+      <!-- Sección 3 -->
+      <section>
+        <h2>Wanna work together?</h2>
+        <a href="./contact.html">
+          <img src="./media/contact.png" alt="" />
+        </a>
+        <p>
+          I'm always open to new and exciting projects. You get a wonderful
+          product, that in turn makes your costumers even happier, and I get new
+          projects to add to my porfolio. I believe these are called win-win-win
+          situations. Right?
+        </p>
+        <!-- <button onClick="window.open('./media/CVmigueltafur.pdf')">
           <i class="fa fa-external-link-square" aria-hidden="true"></i>
           Descargar CV
         </button> -->
-    </section>
+      </section>
+    </div>
   </main>
   <footer>
-    <a href="https://www.linkedin.com/in/migueltafmart/">
+    <div class="wrapper">
+      <a href="https://www.linkedin.com/in/migueltafmart/">
       <i class="fab fa-linkedin"></i>
       <span>LinkedIn</span>
     </a>
@@ -101,8 +108,8 @@
       <span>Behance</span>
     </a>
     <a href="mailto:migueltafmart@gmail.com">
-      <img src="./media/mail.png" alt="Envíame un mensaje" />
+    <img src="./media/mail.png" alt="Envíame un mensaje" />
     </a>
-    <h4>Dónde encontrarme</h4>
+    </div>
   </footer>
 </html>
