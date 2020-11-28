@@ -225,16 +225,16 @@ footer > div.wrapper > a:last-of-type > img {
   :root {
     --viewport: 769px;
   }
-/****************************
+  /****************************
 ********* Header ************
 ****************************/
 
-header h2 {
+  header h2 {
     margin: 1% 0;
     font-size: large;
   }
 
-/****************************
+  /****************************
 ****** Main Content *********
 ****************************/
   main > div > section {
@@ -252,10 +252,13 @@ header h2 {
     width: 47.5%;
     margin: 0 1.1%;
   }
-/****************************
+  /****************************
 ********* Footer ************
 ****************************/
-
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
   footer > div.wrapper > a:last-of-type {
     right: 12px;
     bottom: 32px;
@@ -265,10 +268,10 @@ header h2 {
   :root {
     --viewport: 1200px;
   }
-/****************************
+  /****************************
 ********* Header ************
 ****************************/
-header > div.wrapper {
+  header > div.wrapper {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -286,7 +289,7 @@ header > div.wrapper {
   nav {
     width: 60%;
   }
-/****************************
+  /****************************
 ****** Main Content *********
 ****************************/
   main > div > section {
@@ -308,7 +311,7 @@ header > div.wrapper {
     width: 31%;
     margin: 0 1.1%;
   }
-/****************************
+  /****************************
 ********* Footer ************
 ****************************/
   footer {
