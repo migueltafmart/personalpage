@@ -6,6 +6,7 @@
   --textColor: #000;
   --viewport: 320px;
 }
+/* General Defaults */
 body {
   font-family: p22-underground, Gill Sans, sans-serif;
 }
@@ -24,6 +25,10 @@ div.wrapper {
   width: var(--viewport);
   margin: 0 auto;
 }
+
+/****************************
+*********** Header **********
+****************************/
 
 header {
   width: 100%;
@@ -61,6 +66,10 @@ header h2 {
   margin: 1% 0;
   font-size: small;
 }
+/****************************
+********* Navigation ********
+****************************/
+
 nav {
   margin: 0;
 }
@@ -75,7 +84,7 @@ nav ul li a {
   background: linear-gradient(to right, transparent 50%, var(--MainColor) 50%);
   background-size: 200%;
   background-position: 0, 0;
-  transition: 0.25s;
+  transition: 0s;
 }
 nav ul li a.current {
   color: var(--MainColor);
@@ -84,10 +93,11 @@ nav ul li a:hover {
   color: white;
   background-position: -100%, 0;
   box-shadow: var(--shadow);
+  transition: 0.25s;
 }
 nav ul li a.current:hover {
   color: var(--MainColor);
-  font-weight: medium;
+  font-weight: normal;
   background: transparent;
   box-shadow: none;
 }
@@ -96,6 +106,9 @@ nav ul li a:active {
   background: var(--mainColorActive);
   transition: 0s;
 }
+/****************************
+******* Main Content ********
+****************************/
 main {
   width: 100%;
   margin: 0 auto;
@@ -107,18 +120,17 @@ main > div.wrapper {
   display: flex;
   flex-flow: row wrap;
 }
+/* Section */
 main > div > section {
   width: 100%;
   margin: 0 auto;
   margin-top: 1%;
 }
-main > div > section:last-of-type {
-  align-self: flex-start;
-}
 main > div > section > a:first-of-type > img,
 main > div > section > img:first-of-type {
   width: 100%;
 }
+/*Emphasized Text*/
 main > div > section span {
   font-weight: bold;
   color: var(--mainColorActive);
@@ -126,13 +138,14 @@ main > div > section span {
 main > div > section li {
   margin-bottom: 2%;
 }
+/*Article*/
 main > div > section > article {
   width: 100%;
   display: flex;
   flex-flow: wrap;
   padding-bottom: 32px;
 }
-main > div > section > article > img{
+main > div > section > article > img {
   width: 100%;
 }
 
@@ -147,15 +160,29 @@ main > div > section > article > p {
   margin-top: 12px;
   margin-bottom: 32px;
 }
-main button{
+main button {
   background: var(--MainColor);
   padding: 12px;
   border: none;
   border-radius: 32px;
   margin-left: 1.1%;
   box-shadow: var(--shadow);
-
 }
+main button:hover {
+  color: white;
+}
+main button:focus {
+  outline: none;
+}
+main button:active {
+  background: var(--mainColorActive);
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+/****************************
+********* Footer ************
+****************************/
 footer {
   display: flex;
   width: 100%;
@@ -194,24 +221,40 @@ footer > div.wrapper > a:last-of-type > img {
   width: 96px;
   margin: 30px 14px;
 }
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  :root {
-    --viewport: 320px;
-  }
-}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   :root {
     --viewport: 769px;
   }
+/****************************
+********* Header ************
+****************************/
+
+header h2 {
+    margin: 1% 0;
+    font-size: large;
+  }
+
+/****************************
+****** Main Content *********
+****************************/
   main > div > section {
     width: 48%;
     margin: 0 1%;
     margin-top: 1%;
   }
-  header h2 {
-    margin: 1% 0;
-    font-size: large;
+  main > div > section.cv {
+    width: 100%;
   }
+  main > div > section > article > img:nth-child(3) {
+    display: block;
+  }
+  main > div > section > article > img {
+    width: 47.5%;
+    margin: 0 1.1%;
+  }
+/****************************
+********* Footer ************
+****************************/
 
   footer > div.wrapper > a:last-of-type {
     right: 12px;
@@ -222,12 +265,10 @@ footer > div.wrapper > a:last-of-type > img {
   :root {
     --viewport: 1200px;
   }
-  main > div > section {
-    width: 31%;
-    margin: 0 1%;
-    margin-top: 1%;
-  }
-  header > div.wrapper {
+/****************************
+********* Header ************
+****************************/
+header > div.wrapper {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -245,13 +286,13 @@ footer > div.wrapper > a:last-of-type > img {
   nav {
     width: 60%;
   }
-  footer {
-    position: fixed;
-    bottom: 0;
-  }
-  footer > div.wrapper > a:last-of-type {
-    right: 12px;
-    bottom: 32px;
+/****************************
+****** Main Content *********
+****************************/
+  main > div > section {
+    width: 31%;
+    margin: 0 1%;
+    margin-top: 1%;
   }
   main {
     margin-top: 72px;
@@ -266,5 +307,16 @@ footer > div.wrapper > a:last-of-type > img {
   main > div > section > article > img {
     width: 31%;
     margin: 0 1.1%;
+  }
+/****************************
+********* Footer ************
+****************************/
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  footer > div.wrapper > a:last-of-type {
+    right: 12px;
+    bottom: 32px;
   }
 }
