@@ -264,6 +264,11 @@ footer > div.wrapper > a:last-of-type > img {
     bottom: 32px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1200px) and (orientation:landscape){
+  footer{
+    position:static;
+  }
+}
 @media screen and (min-width: 1201px) {
   :root {
     --viewport: 1200px;
