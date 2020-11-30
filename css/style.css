@@ -241,12 +241,9 @@ footer > div.wrapper > a:last-of-type > img {
   header {
     height: 79px;
   }
-  header uk {
-    height: 72px;
-  }
   header h2 {
     margin: 1% 0;
-    font-size: large;
+    font-size:small;
   }
   nav {
     width: 60%;
@@ -300,9 +297,6 @@ footer > div.wrapper > a:last-of-type > img {
   }
   header {
     height: 79px;
-  }
-  header uk {
-    height: 72px;
   }
   header h2 {
     margin: 1% 0;
