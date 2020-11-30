@@ -211,15 +211,15 @@ footer > div.wrapper > a:last-of-type {
   position: fixed;
   right: 32px;
   bottom: 12px;
-  width: 124px;
-  height: 124px;
+  width: 86px;
+  height: 86px;
   border-radius: 124px;
   background: var(--MainColor);
   box-shadow: var(--shadow);
 }
 footer > div.wrapper > a:last-of-type > img {
-  width: 96px;
-  margin: 30px 14px;
+  width: 60px;
+  margin: 24px 13px;
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   :root {
