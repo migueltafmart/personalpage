@@ -233,8 +233,25 @@ footer > div.wrapper > a:last-of-type > img {
     margin: 1% 0;
     font-size: large;
   }
-
-  /****************************
+  header > div.wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    height: 79px;
+  }
+  header uk {
+    height: 72px;
+  }
+  header h2 {
+    margin: 1% 0;
+    font-size: large;
+  }
+  nav {
+    width: 60%;
+  }
+/****************************
 ****** Main Content *********
 ****************************/
   main > div > section {
